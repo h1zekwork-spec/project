@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интерактивный учебник HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Интерактивный учебник HTML</h1>
+            <p class="subtitle">Изучайте HTML на практике: пишите код и сразу видите результат.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Секция: Заголовки -->
+        <section class="lesson" id="headings">
+            <div class="lesson-info">
+                <h2>Заголовки (h1–h6)</h2>
+                <p>Заголовки используются для обозначения структуры контента. h1 — самый важный, h6 — наименее важный.</p>
+                <div class="hint">
+                    <strong>Подсказка:</strong> Попробуйте изменить текст внутри тегов или заменить h1 на h3.
+                    <code>&lt;h1&gt;Мой заголовок&lt;/h1&gt;</code>
+                </div>
+            </div>
+            <div class="editor-container">
+                <textarea class="code-input" spellcheck="false"><h1>Это главный заголовок</h1>
+<h2>Это заголовок второго уровня</h2>
+<h3>А это заголовок третьего уровня</h3></textarea>
+                <div class="preview-label">Результат:</div>
+                <iframe class="result-preview"></iframe>
+            </div>
+        </section>
+
+        <!-- Секция: Текст -->
+        <section class="lesson" id="text">
+            <div class="lesson-info">
+                <h2>Работа с текстом (p, strong, em)</h2>
+                <p><code>&lt;p&gt;</code> создает абзац, <code>&lt;strong&gt;</code> делает текст жирным, а <code>&lt;em&gt;</code> — курсивом.</p>
+                <div class="hint">
+                    <strong>Подсказка:</strong> Оберните любое слово в <code>&lt;strong&gt;</code>, чтобы выделить его.
+                    <code>&lt;p&gt;Это &lt;strong&gt;важный&lt;/strong&gt; текст.&lt;/p&gt;</code>
+                </div>
+            </div>
+            <div class="editor-container">
+                <textarea class="code-input" spellcheck="false"><p>Обычный абзац текста.</p>
+<p>Текст может быть <strong>жирным</strong> или <em>курсивным</em>.</p>
+<p>А можно комбинировать: <strong><em>жирный курсив</em></strong>.</p></textarea>
+                <div class="preview-label">Результат:</div>
+                <iframe class="result-preview"></iframe>
+            </div>
+        </section>
+
+        <!-- Секция: Списки -->
+        <section class="lesson" id="lists">
+            <div class="lesson-info">
+                <h2>Списки (ul, ol, li)</h2>
+                <p><code>&lt;ul&gt;</code> — маркированный список, <code>&lt;ol&gt;</code> — нумерованный список, <code>&lt;li&gt;</code> — элемент списка.</p>
+                <div class="hint">
+                    <strong>Подсказка:</strong> Добавьте новый элемент <code>&lt;li&gt;Новый пункт&lt;/li&gt;</code> внутрь списка.
+                    <code>&lt;ul&gt;&lt;li&gt;Первый&lt;/li&gt;&lt;/ul&gt;</code>
+                </div>
+            </div>
+            <div class="editor-container">
+                <textarea class="code-input" spellcheck="false"><h3>Список покупок (маркированный):</h3>
+<ul>
+    <li>Хлеб</li>
+    <li>Молоко</li>
+    <li>Яблоки</li>
+</ul>
+
+<h3>План действий (нумерованный):</h3>
+<ol>
+    <li>Прочитать урок</li>
+    <li>Написать код</li>
+    <li>Увидеть результат</li>
+</ol></textarea>
+                <div class="preview-label">Результат:</div>
+                <iframe class="result-preview"></iframe>
+            </div>
+        </section>
+
+        <!-- Секция: Формы -->
+        <section class="lesson" id="forms">
+            <div class="lesson-info">
+                <h2>Формы (input, button, form)</h2>
+                <p>Формы позволяют собирать данные от пользователя. <code>&lt;input&gt;</code> создает поле ввода, <code>&lt;button&gt;</code> — кнопку.</p>
+                <div class="hint">
+                    <strong>Подсказка:</strong> Измените <code>type="text"</code> на <code>type="password"</code> или <code>type="color"</code>.
+                    <code>&lt;input type="date"&gt;</code>
+                </div>
+            </div>
+            <div class="editor-container">
+                <textarea class="code-input" spellcheck="false"><form action="#" method="get">
+    <p>
+        <label>Ваше имя:</label><br>
+        <input type="text" placeholder="Введите имя...">
+    </p>
+    <p>
+        <label>Ваш любимый цвет:</label><br>
+        <input type="color">
+    </p>
+    <button type="submit">Отправить форму</button>
+</form></textarea>
+                <div class="preview-label">Результат:</div>
+                <iframe class="result-preview"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Интерактивный учебник HTML. Сделано для практики.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
